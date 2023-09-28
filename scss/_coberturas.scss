@@ -1,0 +1,103 @@
+    .titulocoberturas{
+        height: 13rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+        color: #4babd3;
+    }
+
+    .lineacoberturas{
+        box-sizing: content-box;
+        height: 0.5rem;
+        overflow: visible;
+        width: 142rem;
+        margin-left: 18rem;
+        background-color:#4babd3;
+        }
+
+    .coberturascolumnas{
+        display: flex;
+               
+        #img1{
+        display: flex;
+        justify-content: left;
+        float: left;
+        margin-left: 25rem;
+        height: 8rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        position: absolute;
+        }
+    .textoomint{
+        display: flex;
+        font-size: 2rem;
+        color: aliceblue;
+        text-align: center;
+        justify-content: center;
+        margin-left: 41rem;
+        margin-top: 7rem;
+        }
+
+        #img2{
+        display: flex;
+        justify-content: left;
+        float: left;
+        margin-left: 25rem;
+        height: 8rem;
+        margin-top: 21rem;
+        margin-bottom: 6rem;
+        position: absolute;
+        }
+
+    .textoosde{
+        display: flex;
+        font-size: 2rem;
+        color: aliceblue;
+        text-align: left;
+        justify-content: left;
+        margin-left: -29rem;
+        margin-top: 22rem;
+        }
+        
+        #img3{
+            display: flex;
+            justify-content: left;
+            float: left;
+            margin-left: 25rem;
+            height: 8rem;
+            margin-top: 36rem;
+            margin-bottom: 6rem;
+            position: absolute;
+            }
+    
+        .textoosppra{
+            display: flex;
+            font-size: 2rem;
+            color: aliceblue;
+            text-align: left;
+            justify-content: left;
+            margin-left: -28rem;
+            margin-top: 37rem;
+        }
+
+        #parrafo-cobertura{
+            display: flex;
+            font-size: 3rem;
+            color: aliceblue;
+            text-align: center;
+            justify-content: center;
+            margin-left: -18rem;
+            margin-top: 54rem;
+            text-decoration:underline;
+        }
+    }
+
+    
+
+
+
+
+

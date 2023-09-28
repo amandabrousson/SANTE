@@ -1,11 +1,17 @@
 {
-  "name": "freelancer_inicio",
+  "name": "sante_kinesiologia",
   "version": "1.0.0",
-  "description": "",
+  "description": "repositorio_web_sante",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/index.scss css/index.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
-  "license": "ISC"
+  "author": "amanda_brousson",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
 }

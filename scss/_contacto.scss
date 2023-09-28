@@ -1,0 +1,49 @@
+#contacto{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,49,121,1) 36%, rgba(0,212,255,1) 100%);
+    height: 70rem;
+    .titulocontacto{
+        height: 13rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        margin-top: 8rem;
+        margin-bottom: -2rem;
+        color: #4babd3;
+    }
+    .lineacontacto{
+        box-sizing: content-box;
+        height: 0.5rem;
+        overflow: visible;
+        width: 62rem;
+        margin-left: 58rem;
+        background-color: #4babd3;
+        margin-bottom: 5rem;
+    }
+    .columnas-contacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        iframe{
+        display: grid;
+        margin-left: 2rem;
+        width: 84rem;
+        }
+        .filas-contacto{
+            grid-template-rows: 1fr 1fr 1fr;
+            background-color: #4f80e2;
+            margin-right: 2rem;
+            p{
+            display: grid;
+            font-size: 2rem;
+            justify-content: center;
+            color: aliceblue;
+                
+            }     
+        }
+    }
+}
+
+
+
+
+
