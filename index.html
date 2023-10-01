@@ -216,9 +216,9 @@
     <div class="sobre_nosotros-pantalladividida">
         <p>Somos un consultorio de kinesiología especializado en traumatología y deporte, en el que buscamos brindar un servicio de calidad en la resolución de las patologías tanto del aparato locomotor como de la columna y lesiones deportivas.</p>
         <p>   Evaluaciones funcionales Isométricas de  fuerza y funcionales.</p>
-        <p>   Deportología - Tratamiento en todo tipo de lesiones deportivas, prevención de lesiones, ejercicios de campo para cada tipo de lesión en grupos o individuales para la vuelta a la competencia. Planes de trabajo individualizados.</p>
-        <p>   Prevention Program - Programa Preventivo de lesiones para toda clase de deportista.</p>
         <span class= "hide" id="texthide">
+            <p>   Deportología - Tratamiento en todo tipo de lesiones deportivas, prevención de lesiones, ejercicios de campo para cada tipo de lesión en grupos o individuales para la vuelta a la competencia. Planes de trabajo individualizados.</p>
+            <p>   Prevention Program - Programa Preventivo de lesiones para toda clase de deportista.</p>
             <p>   Recovery Program - Programa de recuperación post entrenamiento o competencia, para que te recuperes al 100% del esfuerzo.</p>
             <p>   Mep Sport Concept - Para tendinopatías crónicas, lesiones musculares, contracturas, etc.</p>
             <p>   Kinesiología a distancia de manera on-line - Con seguimiento semanal, rutina de ejercicios y un cuestionario para realizar la individualización del plan de tratamiento.</p>
@@ -231,10 +231,11 @@
         <h3>STAFF</h3>
         <hr class="lineastaff">
         <h4>Licenciado Emiliano Urruchúa</h4>   
-        <img src="img/871577_fa64b63e159c410ca43a89e59c1c6cfb~mv2.jpg">
-        <div class="parrafostaff">
+        <!-- <img src="img/871577_fa64b63e159c410ca43a89e59c1c6cfb~mv2.jpg">
+       -->  <div class="parrafostaff">
             <p>Egresado de la Universidad Fundación H. A. Barceló en el año 2011. En 2014 culminé mis estudios en el Posgrado en la Universidad Favaloro siendo Especialista en lesiones del deporte, defendiendo mi tesis sobre "Lesiones musculares en el fútbol de élite". En 2022 defendí mi tesis "Protocolo de prevención de lesiones musculares en el fútbol de élite" para obtener mi diplomatura en ciencias del entrenamiento de la Universidad de Rafaela.</p>
             <p>Cuento con amplia experiencia en el área deportiva formando parte del cuerpo médico de distintos clubes como: Club Social San Martin de Burzaco, Club Deportivo y mutual Leandro N. Alem y en la Institución Cultural y Deportiva Pedro Echagüe equipo de Básquet en el torneo Federal de Básquet.</p>
+            <span class= "hidesm" id="texthidesm">
             <p>Formé parte del cuerpo médico de la A.A. Argentinos Juniors, comenzando mi carrera como encargado de las divisiones inferiores, para luego formar parte del cuerpo médico de la división reserva. En el año 2016 comencé a formar parte del Staff de la primera división como kinesiólogo del Plantel Profesional, llegando a participar en distintos torneos de prestigio nacional e internacional como la Copa Sudamericana, Copa Argentina, Copa de la Superliga, Superliga, etc.</p>
             <p>En la actualidad soy parte del Staff del Club Atlético Platense, siendo el kinesiólogo del plantel profesional de básquet en La Liga nacional de básquet desde la temporada 2020-2021.</p>
             <p>Profesional de consulta y rehabilitación de deportistas profesionales de distintas disciplinas deportivas de élite como son el tenis, Basquet, Boxeo.</p>   
@@ -245,14 +246,16 @@
             <p>Certificado en RCP, (Emergencias Salud.)</p>
             <p>Curso FIFA 11+.</p>
             <p>XIX Congreso Argentino de Kinesiología.</p>
+        </span>
+        <button class="readmoresm" id="hidesmm">Ver más</button>
         </div>
     </div>
-        <div class="escudos">
+        <!-- <div class="escudos">
                 <img class="escudo1" src="img/platense-PhotoRoom.png-PhotoRoom.png">
                 <img class="escudo2" src="img/pngwing.com.png">
                 <img class="escudo3" src="img/clubx-PhotoRoom.png-PhotoRoom.png">
                 <img class="escudo4" src="img/burzaco-PhotoRoom.png-PhotoRoom.png">
-        </div>
+        </div> -->
 </section>
 
 <section id="coberturas">
@@ -282,6 +285,23 @@
     <div class="columnas-contacto">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3782867845393!2d-58.463991824551535!3d-34.543976272975776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb420ebeffa0b%3A0x19fbc6b0f144fa4!2sArribe%C3%B1os%203728%2C%20C1429%20CABA!5e0!3m2!1ses!2sar!4v1686091195148!5m2!1ses!2sar" width="1400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
         <div class="filas-contacto">
+            <form id= "formulario" action=mailto:amanda.brousson@gmail.com>
+             <ul>
+              <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="email">Dirección de mail:</label>
+                <input type="email" id="mail" name="user_mail" />
+              </li>
+              <li>
+                <label for="msg">Consulta:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <input type="submit" value="Enviar">
+              </ul>
+            </form>
             <p>Arribeños 3728 1B - Núñez- CABA</p>
             <p>Teléfono - 1166772813</p>
         </div>
@@ -293,7 +313,7 @@
  
   
 
-    </section>
+</section>
 
     <footer class="footer">
     <p class="footer__texto">Todos los derechos reservados. ambz 2023</p> 

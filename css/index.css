@@ -368,7 +368,17 @@ header {
   margin-left: 3rem;
   margin-right: 3rem;
   border-radius: 6px;
-  height: 214rem; }
+  height: 93rem;
+  /* .sobre_nosotros-staff img{   HASTA QUE NO APLIQUE IMAGEN QUEDA COMENTADO
+    width: 60rem;
+    height: 93rem;
+    align-self: flex-start;
+    margin-left: 7rem;
+    /* margin-top: 2rem; */
+  /* padding-right: 9rem; */
+  /* position: absolute;
+    margin-top: 10%;
+    }  */ }
   .sobre_nosotros .sobre_nosotros-subtitulo {
     margin-top: 2rem;
     text-align: left;
@@ -379,6 +389,12 @@ header {
         height: 60rem;
         float: right;
         margin-right: 8rem;    
+        } */
+    /* .imgsn{       HASTA QUE NO APLIQUE IMAGEN QUEDA COMENTADO
+            width: 55rem;
+            height: 60rem;
+            float: right;
+            margin-right: 8rem;  
         } */ }
     .sobre_nosotros .sobre_nosotros-subtitulo .linea {
       box-sizing: content-box;
@@ -397,8 +413,7 @@ header {
       font-size: 22px;
       color: aliceblue;
       text-align: justify;
-      margin-left: 7rem;
-      width: 77rem; }
+      margin-left: 7rem; }
     .sobre_nosotros .sobre_nosotros-subtitulo .hide {
       display: none; }
     .sobre_nosotros .sobre_nosotros-subtitulo .show {
@@ -410,12 +425,7 @@ header {
       font-size: 2.5rem;
       text-decoration: underline;
       display: flex;
-      margin-left: 80rem; }
-    .sobre_nosotros .sobre_nosotros-subtitulo .imgsn {
-      width: 55rem;
-      height: 60rem;
-      float: right;
-      margin-right: 8rem; }
+      margin-left: 7rem; }
   .sobre_nosotros .sobre_nosotros-staff {
     display: flex;
     flex-direction: column; }
@@ -433,30 +443,30 @@ header {
       width: 62rem;
       margin-left: 7rem;
       background-color: #4babd3; }
-  .sobre_nosotros .sobre_nosotros-staff img {
-    width: 60rem;
-    height: 93rem;
-    align-self: flex-start;
-    margin-left: 7rem;
-    /* margin-top: 2rem; */
-    /* padding-right: 9rem; */
-    position: absolute;
-    margin-top: 10%; }
   .sobre_nosotros .sobre_nosotros-staff h4 {
     font-size: 3rem;
-    margin-left: 100rem;
+    margin-left: 7rem;
     color: aliceblue;
+    margin-bottom: 2rem;
     /* align-self: self-end; */ }
 
 .parrafostaff {
   color: aliceblue;
   font-size: 22px;
-  margin-right: 10rem;
-  text-align: justify;
   /* float: right; */
-  margin-left: 75rem;
-  position: absolute;
-  margin-top: 13%; }
+  margin-left: 7rem; }
+  .parrafostaff .hidesm {
+    display: none; }
+  .parrafostaff .showsm {
+    display: block; }
+  .parrafostaff .readmoresm {
+    background-color: transparent;
+    color: aliceblue;
+    border: none;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    display: flex;
+    margin-right: 82rem; }
 
 .escudos {
   /* display: flex; */
@@ -587,6 +597,8 @@ header {
       grid-template-rows: 1fr 1fr 1fr;
       background-color: #4f80e2;
       margin-right: 2rem; }
+      #contacto .columnas-contacto .filas-contacto #formulario {
+        font-size: 2rem; }
       #contacto .columnas-contacto .filas-contacto p {
         display: grid;
         font-size: 2rem;

@@ -3,7 +3,7 @@
     margin-left: 3rem;
     margin-right: 3rem;
     border-radius: 6px; 
-    height: 214rem;            
+    height: 93rem; //214rem <-- valor con la section toda desplegada            
 
     .sobre_nosotros-subtitulo{
     margin-top: 2rem;
@@ -40,7 +40,6 @@
     color: aliceblue;
     text-align:justify;
     margin-left: 7rem;
-    width: 77rem;
     }
         .hide{
             display: none;
@@ -55,15 +54,15 @@
             font-size: 2.5rem;
             text-decoration: underline;
             display: flex;
-            margin-left: 80rem;
+            margin-left: 7rem;
         }
 
-        .imgsn{
+        /* .imgsn{       HASTA QUE NO APLIQUE IMAGEN QUEDA COMENTADO
             width: 55rem;
             height: 60rem;
             float: right;
             margin-right: 8rem;  
-        }
+        } */
     }
 
 
@@ -87,34 +86,48 @@
         background-color: #4babd3;
         }
     }
-    .sobre_nosotros-staff img{
+    /* .sobre_nosotros-staff img{   HASTA QUE NO APLIQUE IMAGEN QUEDA COMENTADO
     width: 60rem;
     height: 93rem;
     align-self: flex-start;
     margin-left: 7rem;
     /* margin-top: 2rem; */
     /* padding-right: 9rem; */
-    position: absolute;
+    /* position: absolute;
     margin-top: 10%;
-    }
+    }  */
 
     .sobre_nosotros-staff h4{
     font-size: 3rem;
-    margin-left: 100rem;
+    margin-left: 7rem;
     color: aliceblue;
+    margin-bottom: 2rem;
     /* align-self: self-end; */
 }}
 
 .parrafostaff{
     color: aliceblue;
     font-size: 22px;
-    margin-right: 10rem;
-    text-align: justify;
     /* float: right; */
-    margin-left: 75rem;
-    position: absolute;
-    margin-top: 13%;
-}
+    margin-left: 7rem;
+        .hidesm{
+            display: none;
+        }
+        .showsm{
+            display: block;
+        }
+        .readmoresm{
+            background-color: transparent;
+            color: aliceblue;
+            border: none;
+            font-size: 2.5rem;
+            text-decoration: underline;
+            display: flex;
+            margin-right: 82rem;
+        }
+    }
+
+
 
 .escudos{
     /* display: flex; */

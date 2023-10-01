@@ -49,34 +49,47 @@ cierretexto4.addEventListener("click", ()=>{popup4.close();})
 
 /* FUNCIONES DE STAFF */
 
-// const hidesb = document.getElementById('hidesb');
-// const texthide = document.getElementById('texthide');
+const hidesb = document.getElementById('hidesb');   // Boton
+const texthide = document.getElementById('texthide'); // texto que se esconde
 
-// hidesb.addEventListener('click', toggleText);
+hidesb.addEventListener('click', toggleText);
 
-// function toggleText(){
-//     texthide.classList.toggle('show');
+function toggleText(){
+    texthide.classList.toggle('show');
 
-//     if(texthide.classList.contains('show')){
-//         hidesb.innerHTML = 'Ver menos';
-//     }
-//         else{
-//             hidesb.innerHTML = 'Ver más';
-//         }
-// }
+    if(texthide.classList.contains('show')){
+        hidesb.innerHTML = 'Ver menos';
+        let div= document.createElement('div');
+            div.innerHTML= `
+            <img src="./img/santeconsultorio.jpg">        
+            `;
+        
+        document.sobre_nosotros.append(div);
+     }
+         else{
+             hidesb.innerHTML = 'Ver más';
 
-const showsb = document.getElementsByClassName('show');
-showsb.addEventListener('click', ()=>{
-    let div = document.createElement('div');
-    div.innerHTML = ` 
-    
-        <img src="img/871577_6157dacac0794941857a999841b208cc~mv2 (1).jpg">  </img>
-    
-    
-    `;
-    
+         }
+ };
 
-    document.body.section.append();
-})
+/* SOBRE MÍ */
 
+/* const hidesmm = document.getElementById('hidesmm');  // boton
+const texthidesm = document.getElementById('texthidesm'); // texto que se esconde
 
+hidesmm.addEventListener('click', toggleText);
+
+function toggleText(){
+    texthidesm.classList.toggle('showsm');
+
+    if(texthidesm.classList.contains('showsm')){
+        hidesmm.innerHTML = 'Ver menos';
+        let divv= document.createElement('divv');
+        divv.innerHTML= imgsn;
+        document.body(sobre_nosotros).append(div);
+     }
+         else{
+             hidesmm.innerHTML = 'Ver más';
+
+         }
+ }; */
