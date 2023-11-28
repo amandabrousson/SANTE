@@ -49,47 +49,37 @@ cierretexto4.addEventListener("click", ()=>{popup4.close();})
 
 /* FUNCIONES DE STAFF */
 
-const hidesb = document.getElementById('hidesb');   // Boton
+const btnsn = document.getElementById('texthide_btn');   // Boton
 const texthide = document.getElementById('texthide'); // texto que se esconde
 
-hidesb.addEventListener('click', toggleText);
+btnsn.addEventListener('click', toggleText);
 
 function toggleText(){
-    texthide.classList.toggle('show');
+    texthide.classList.toggle('showsn');
 
-    if(texthide.classList.contains('show')){
-        hidesb.innerHTML = 'Ver menos';
-        let div= document.createElement('div');
-            div.innerHTML= `
-            <img src="./img/santeconsultorio.jpg">        
-            `;
-        
-        document.sobre_nosotros.append(div);
-     }
+    if(texthide.classList.contains('showsn')){
+        btnsn.innerHTML = 'Ver menos';
+      } 
          else{
-             hidesb.innerHTML = 'Ver más';
+             btnsn.innerHTML = 'Ver más';
 
          }
  };
 
 /* SOBRE MÍ */
 
-/* const hidesmm = document.getElementById('hidesmm');  // boton
-const texthidesm = document.getElementById('texthidesm'); // texto que se esconde
+const btn_staff = document.getElementById('esconderparrafostaff_btn');  // boton
+const texthidestaff = document.getElementById('esconderparrafostaff'); // texto que se esconde
 
-hidesmm.addEventListener('click', toggleText);
+btn_staff.addEventListener('click', toggleText);
 
-function toggleText(){
-    texthidesm.classList.toggle('showsm');
+function toggleTextstaff(){
+    texthidestaff.classList.toggle('mostrarstaff');
 
-    if(texthidesm.classList.contains('showsm')){
-        hidesmm.innerHTML = 'Ver menos';
-        let divv= document.createElement('divv');
-        divv.innerHTML= imgsn;
-        document.body(sobre_nosotros).append(div);
-     }
-         else{
-             hidesmm.innerHTML = 'Ver más';
-
-         }
- }; */
+    if(texthidestaff.classList.contains('mostrarstaff')){
+        btn_staff.innerHTML = 'Ver menos';
+    }
+    else{
+        btn_staff.innerHTML = 'Ver más';
+    }
+ };  

@@ -41,10 +41,10 @@
     text-align:justify;
     margin-left: 7rem;
     }
-        .hide{
+        .hidesn{
             display: none;
         }
-        .show{
+        .showsn{
             display: block;
         }
         .readmoresb{
@@ -102,30 +102,31 @@
     margin-left: 7rem;
     color: aliceblue;
     margin-bottom: 2rem;
-    /* align-self: self-end; */
-}}
-
-.parrafostaff{
-    color: aliceblue;
-    font-size: 22px;
-    /* float: right; */
-    margin-left: 7rem;
-        .hidesm{
-            display: none;
-        }
-        .showsm{
-            display: block;
-        }
-        .readmoresm{
-            background-color: transparent;
-            color: aliceblue;
-            border: none;
-            font-size: 2.5rem;
-            text-decoration: underline;
-            display: flex;
-            margin-right: 82rem;
-        }
     }
+
+        .parrafostaff{
+        color: aliceblue;
+        font-size: 22px;
+        margin-left: 7rem;
+
+            .esconderstaff{
+                    display: none;
+                }
+
+                .mostrarstaff{
+                    display: block;
+                }
+                
+                .leermas{
+                    background-color: transparent;
+                    color: aliceblue;
+                    border: none;
+                    font-size: 2.5rem;
+                    text-decoration: underline;
+                    display: flex;
+                    margin-right: 82rem;
+                }
+    }}
 
 
 
