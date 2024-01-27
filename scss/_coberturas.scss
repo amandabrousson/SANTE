@@ -1,10 +1,14 @@
+  #coberturas{
+    margin-top: 100%;
+    
+  
     .titulocoberturas{
         height: 13rem;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 4rem;
-        margin-top: 2rem;
+        margin-top: auto;
         margin-bottom: -2rem;
         color: #4babd3;
     }
@@ -17,52 +21,52 @@
         margin-left: 18rem;
         background-color:#4babd3;
         }
-
+    
     .coberturascolumnas{
         display: flex;
 
         .columnaomint{
             #img1{
-        display: flex;
-        justify-content: left;
-        float: left;
-        margin-left: 25rem;
-        height: 8rem;
-        margin-top: 6rem;
-        margin-bottom: 6rem;
-        position: absolute;
-        }
+                display: flex;
+                justify-content: left;
+                float: left;
+                margin-left: 25rem;
+                height: 8rem;
+                margin-top: 6rem;
+                margin-bottom: 6rem;
+                position: absolute;
+                }
 
-        .textoomint{
-        
-        font-size: 2rem;
-        color: aliceblue;
-        text-align: center;
-        justify-content: center;
-        margin-left: 40rem;
-        margin-top: 8rem;
-        }
+            .textoomint{
+            
+                font-size: 2rem;
+                color: aliceblue;
+                text-align: center;
+                justify-content: center;
+                margin-left: 40rem;
+                margin-top: 8rem;
+                }
 
-        #img2{
-        display: flex;
-        justify-content: left;
-        float: left;
-        margin-left: 25rem;
-        height: 8rem;
-        margin-top: 21rem;
-        margin-bottom: 6rem;
-        position: absolute;
-        }
+            #img2{
+                display: flex;
+                justify-content: left;
+                float: left;
+                margin-left: 25rem;
+                height: 8rem;
+                margin-top: 21rem;
+                margin-bottom: 6rem;
+                position: absolute;
+                }
 
-        .textoosde{
-        
-        font-size: 2rem;
-        color: aliceblue;
-        text-align: left;
-        justify-content: left;
-        margin-left: 40rem;
-        margin-top: 25rem;
-        }
+            .textoosde{
+            
+                font-size: 2rem;
+                color: aliceblue;
+                text-align: left;
+                justify-content: left;
+                margin-left: 40rem;
+                margin-top: 25rem;
+                }
         }
                
         .columnaosppra{
@@ -116,7 +120,7 @@
             text-decoration:underline;
         }
 
-
+}
 
 
 

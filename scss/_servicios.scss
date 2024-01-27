@@ -116,18 +116,22 @@
                     } 
                 }
                 .carrousel{
-                    max-width: 96%;
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    /* width: 96%;
                     overflow: auto;
                     position: absolute;
                     margin-bottom: 4rem;
                     overflow-x: scroll;
-                    scroll-snap-type: x mandatory;
+                    scroll-snap-type: x mandatory; */
                                         
                     .imagenespopup1{
                     display: flex;
-                    object-fit: cover;
+                    transform: transform 0.5s ease;
+                    /* object-fit: cover;
                     scroll-snap-align: center;
-
+ */
                     .img_carrousel{
                         height: 34rem;
                         width: 46rem;
@@ -137,7 +141,15 @@
                     }
                     }
 
+                    #prevButton,#nextButton {
+                        margin-top: 3px;
+                        cursor: pointer;
+                        padding: 5px 10px;
+                        font-size: 14px;
                     }
+                    }
+
+
                 #cierretexto1{
                     text-align: center;
                     color: white;

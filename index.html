@@ -2,14 +2,13 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SANTÉ- KINESIOLOGÍA DEPORTIVA</title>
     <link rel="preload" href="css.css/normalize.css" as="style">
     <!-- <link rel="stylesheet" href="css.css/normalize.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/index.css" as="style">
     <link href="css/index.css" rel="stylesheet">
     
 </head>
@@ -18,13 +17,13 @@
     <header> 
         <h1>SANTÉ</h1> 
         <div class="contenedorheader">
-            <img id="imagenheader" src="img/sante - copia-PhotoRoom.png-PhotoRoom.png">
+            <img id="imagenheader" src="img/sante - copia-PhotoRoom.png-PhotoRoom.png" alt="Imagen Sante">
             <h2>Kinesiología deportiva</h2>
         </div>
     
         <div class="navegador">
             <nav class="navegador__indice navegador__contenedor">
-                <a href="#index" class="active">INICIO</a>
+                <a href="#inicio" class="active">INICIO</a>
                 <a href="#servicios">SERVICIOS</a>
                 <a href="#sobre_nosotros">SOBRE NOSOTROS</a>
                 <a href="#coberturas">COBERTURAS</a>
@@ -36,7 +35,7 @@
 <section id="inicio">
         <div class="hero">
             <div class="contenido-hero">
-                <a class="boton" href="#">TURNOS</a>
+                <a class="boton" href="#contacto">TURNOS</a>
             </div>
         </div>
                 
@@ -95,6 +94,7 @@
         </p>
         <h3>Evaluaciones de fuerza y <br>funcionales </h3>
     </div>
+    </div>
    </div>
   </section>
     
@@ -124,7 +124,7 @@
                             <path d="M13 3.055a9 9 0 1 0 7.941 7.945" />
                             <path d="M15 6v3h3l3 -3h-3v-3z" />
                             <path d="M15 9l-3 3" />
-                        </svg></svg></p> 
+                        </svg></p> 
                         <p id="planteob"><b>PLANTEO DE OBJETIVOS POR ETAPAS.</b></p>
                         <img id="planificacion" src="img/icons8-exercise-list-96.png">
                         <p id="planifp"><b>PLANIFICACIÓN DEL TRATAMIENTO Y CARGAS.</b></p>
@@ -150,9 +150,11 @@
                             <img src="img/solapa kinesiologia/bici.png" class="img_carrousel">
                             <img src="img/solapa kinesiologia/polea_cronica.png" class="img_carrousel">
                         </div>
-                     </div>
-                    <button id="cierretexto1">Cerrar</button>
+                     <button id="prevButton" onclick="prevSlide()">Anterior</button>
+                     <button id="nextButton" onclick="nextSlide()">Siguiente</button>
+                    </div>
                      
+                    <button id="cierretexto1">Cerrar</button>
                     </dialog>
            </div>
     
@@ -234,23 +236,23 @@
 </section> 
 
 <section id="sobre_nosotros" class="sobre_nosotros">
-<div class="sobre_nosotros-subtitulo"> 
-                <h3>SOBRE NOSOTROS</h3>
-                <!-- <div><img id="imgsn" src="img/871577_6157dacac0794941857a999841b208cc~mv2 (1).jpg"></div>
-                 -->    <hr class="linea">
-    <div class="sobre_nosotros-pantalladividida">
-        <p>Somos un consultorio de kinesiología especializado en traumatología y deporte, en el que buscamos brindar un servicio de calidad en la resolución de las patologías tanto del aparato locomotor como de la columna y lesiones deportivas.</p>
-        <p>   Evaluaciones funcionales Isométricas de  fuerza y funcionales.</p>
-        <span class= "hidesn" id="texthide">
-            <p>   Deportología - Tratamiento en todo tipo de lesiones deportivas, prevención de lesiones, ejercicios de campo para cada tipo de lesión en grupos o individuales para la vuelta a la competencia. Planes de trabajo individualizados.</p>
-            <p>   Prevention Program - Programa Preventivo de lesiones para toda clase de deportista.</p>
-            <p>   Recovery Program - Programa de recuperación post entrenamiento o competencia, para que te recuperes al 100% del esfuerzo.</p>
-            <p>   Mep Sport Concept - Para tendinopatías crónicas, lesiones musculares, contracturas, etc.</p>
-            <p>   Kinesiología a distancia de manera on-line - Con seguimiento semanal, rutina de ejercicios y un cuestionario para realizar la individualización del plan de tratamiento.</p>
-        </span>
-        <button class="readmoresb" id="texthide_btn">Ver más</button>
+    <div class="sobre_nosotros-subtitulo"> 
+                    <h2>SOBRE NOSOTROS</h2>
+                    <!-- <div><img id="imgsn" src="img/871577_6157dacac0794941857a999841b208cc~mv2 (1).jpg"></div>
+                    -->    <hr class="linea">
+        <div class="sobre_nosotros-pantalladividida">
+            <p>Somos un consultorio de kinesiología especializado en traumatología y deporte, en el que buscamos brindar un servicio de calidad en la resolución de las patologías tanto del aparato locomotor como de la columna y lesiones deportivas.</p>
+            <p>   Evaluaciones funcionales Isométricas de  fuerza y funcionales.</p>
+            <span class= "hidesn" id="texthide">
+                <p>   Deportología - Tratamiento en todo tipo de lesiones deportivas, prevención de lesiones, ejercicios de campo para cada tipo de lesión en grupos o individuales para la vuelta a la competencia. Planes de trabajo individualizados.</p>
+                <p>   Prevention Program - Programa Preventivo de lesiones para toda clase de deportista.</p>
+                <p>   Recovery Program - Programa de recuperación post entrenamiento o competencia, para que te recuperes al 100% del esfuerzo.</p>
+                <p>   Mep Sport Concept - Para tendinopatías crónicas, lesiones musculares, contracturas, etc.</p>
+                <p>   Kinesiología a distancia de manera on-line - Con seguimiento semanal, rutina de ejercicios y un cuestionario para realizar la individualización del plan de tratamiento.</p>
+            </span>
+            <button class="readmoresb" id="texthide_btn">Ver más</button>
+        </div>
     </div>
-</div>
 
     <div class="sobre_nosotros-staff">
         <h3>STAFF</h3>
@@ -272,7 +274,7 @@
                 <p>Curso FIFA 11+.</p>
                 <p>XIX Congreso Argentino de Kinesiología.</p>
             </span>
-        <button class="leermas" id="esconderparrafostaff_btn">Ver más</button>
+        <button onclick="expandir()" class="leermas" id="esconderparrafostaff_btn">Ver más</button>
         </div>
     </div>
         <!-- <div class="escudos">
@@ -284,8 +286,8 @@
 </section>
 
 <section id="coberturas">
-        <h2 class="titulocoberturas">COBERTURAS</h2>
-        <hr class="lineacoberturas">
+    <h2 class="titulocoberturas">COBERTURAS</h2>
+    <hr class="lineacoberturas">
     <div class="coberturascolumnas">
 
         <div class="columnaomint">
