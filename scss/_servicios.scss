@@ -1,8 +1,8 @@
 .servicios{
     margin-top: 1rem;
     margin-bottom: 2rem;
+    height: 650px;
 }
-
 
 .fondoservicios{
     font-size: 6rem;
@@ -55,6 +55,7 @@
                     text-decoration: underline ;
                 }
            }
+           /* POPUP1 */
              #popup1::backdrop{
                 opacity: 1;
                 } 
@@ -70,10 +71,9 @@
                 padding-top: 0rem;
             
                 .recuadrop1{
-                /* background-color: #10162c; */
                 border-left: groove;
                 border-right: groove;
-                height: 74rem;
+                height: 134rem;
             
                     h2{
                         text-decoration: underline;
@@ -116,15 +116,10 @@
                     } 
                 }
                 .carrousel{
-                    width: 100%;
+                    width: 90%;
                     overflow: hidden;
                     position: relative;
-                    /* width: 96%;
-                    overflow: auto;
-                    position: absolute;
-                    margin-bottom: 4rem;
-                    overflow-x: scroll;
-                    scroll-snap-type: x mandatory; */
+                    margin-left: 6.5rem;
                                         
                     .imagenespopup1{
                     display: flex;
@@ -138,14 +133,24 @@
                         margin-top: 13rem;
                         margin-right: 1rem;
                         margin-bottom: 10rem;
-                    }
-                    }
 
-                    #prevButton,#nextButton {
-                        margin-top: 3px;
-                        cursor: pointer;
-                        padding: 5px 10px;
-                        font-size: 14px;
+                        &:hover{
+                            transform: scale(1.90);
+                            opacity: 1;
+                            }
+                        }
+                    }
+                }
+                    .buttonContainer{
+                        display: flex;
+                        justify-content: center;
+                        #prevButton,#nextButton {
+                            margin-top: 3px;
+                            margin-right: 20px;
+                            cursor: pointer;
+                            padding: 5px 10px;
+                            font-size: 14px;
+                        }
                     }
                     }
 
@@ -153,13 +158,14 @@
                 #cierretexto1{
                     text-align: center;
                     color: white;
-                    position: absolute;
                     top: 168%;
                     left: 50%;
                     transform: translate(-54%, 7%);
                     font-size: 2rem;
                     background-color: gray;
                     margin-bottom: 6rem;
+                    margin-left: 4rem;
+                    margin-top: 10px;
                     }
                 }
 
@@ -167,12 +173,13 @@
         
         }
 
+        /* COLUMNA 2  */
         
         .colum2{
          position: relative;
          display: inline-block;
          text-align: center;
-            img{
+            .imgserv{
                 height: 49rem;
                 opacity: 0.3;
             &:hover{
@@ -198,13 +205,21 @@
                 } 
             
             #popup2{
-                max-width: 90ch;
+                max-width:75%;
+                max-height: 90%;
                 font-size: 2.5rem;
                 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(9, 30, 68) 36%);
                 color: aliceblue;
                 border-radius: 1%;
                 border-color: #10162c;
                 padding-top: 0rem;
+
+                .recuadrop2{
+                border-left: groove;
+                border-right: groove;
+                height: 134rem;
+                }
+
                 h2{
                     text-decoration: underline;
                 }
@@ -213,8 +228,75 @@
                     margin-right: 8rem;
                     text-align: justify;
                 }
-        }}
 
+                .escudos{
+                    display: flex;
+                    justify-content: center;
+                    border-spacing: 2rem;
+                }
+                .escudosimg{
+                    display: flex;
+                    height: 12rem;
+                    flex-direction: row;
+                    border-spacing: 2rem;
+                    margin-top: 5rem;
+                }
+        }
+        .carrousel2{
+            width: 90%;
+            overflow: hidden;
+            position: relative;
+            margin-left: 6.5rem;
+                                
+            .imagenespopup2{
+            display: flex;
+            transform: transform 0.5s ease;
+            /* object-fit: cover;
+            scroll-snap-align: center;
+*/
+            .img_carrousel2{
+                height: 34rem;
+                width: 46rem;
+                margin-top: 13rem;
+                margin-right: 1rem;
+                margin-bottom: 10rem;
+
+                &:hover{
+                    transform: scale(1.90);
+                    opacity: 1;
+                    }
+                }
+            }
+        }
+            .buttonContainer2{
+                display: flex;
+                justify-content: center;
+                #prevButton2,#nextButton2 {
+                    margin-top: 3px;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                }
+            }
+            }
+
+
+        #cierretexto{
+            text-align: center;
+            color: white;
+            top: 168%;
+            left: 50%;
+            transform: translate(-54%, 7%);
+            font-size: 2rem;
+            background-color: gray;
+            margin-bottom: 6rem;
+            margin-left: 4rem;
+            margin-top: 10px;
+            }
+        
+    
+        /* COLUMNA 3 */
         
         .colum3{
         position: relative;
@@ -246,26 +328,100 @@
                 } 
             
             #popup3{
-                max-width: 90ch;
+                max-width:75%;
+                max-height: 90%;
                 font-size: 2.5rem;
                 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(9, 30, 68) 36%);
                 color: aliceblue;
                 border-radius: 1%;
                 border-color: #10162c;
                 padding-top: 0rem;
+
+                .recuadrop3{
+                    border-left: groove;
+                    border-right: groove;
+                    height: 134rem;
+                    }
+
                 h2{
                     text-decoration: underline;
                 }
+
+                .parrafop3{
+                    margin-left: 8rem;
+                    margin-right: 8rem;
+                    text-align: justify;
+                }
+                .cajalistap3{
+                    background-color: #4baad31a;
+                    margin: 5rem;
+                    padding: 3rem;
+                    border-radius: 3px;
+                }  
+
                 #listapop3{
-                    column-count: 2;
-                    column-gap: 2rem;
+                    column-count: 3;
                     column-rule: 4px gray;
                     list-style: none;
-                }                 
+                    justify-content: center;
+                    vertical-align:text-top;
+                    padding-top: 1rem;
+                }        
+                       
                 }
-        }}
+                .carrousel3{
+                    width: 90%;
+                    overflow: hidden;
+                    position: relative;
+                    margin-left: 6.5rem;
+                                        
+                    .imagenespopup3{
+                    display: flex;
+                    transform: transform 0.5s ease;
+                    /* object-fit: cover;
+                    scroll-snap-align: center;
+        */
+                    .img_carrousel{
+                        height: 34rem;
+                        width: 46rem;
+                        margin-top: 13rem;
+                        margin-right: 1rem;
+                        margin-bottom: 10rem;
         
-    
+                        &:hover{
+                            transform: scale(1.90);
+                            opacity: 1;
+                            }
+                        }
+                    }
+                }
+                    .buttonContainer3{
+                        display: flex;
+                        justify-content: center;
+                        #prevButton2,#nextButton2 {
+                            margin-top: 3px;
+                            margin-right: 20px;
+                            cursor: pointer;
+                            padding: 5px 10px;
+                            font-size: 14px;
+                        }
+                    }
+                     
+        
+                #cierretexto3{
+                    text-align: center;
+                    color: white;
+                    top: 168%;
+                    left: 50%;
+                    transform: translate(-54%, 7%);
+                    font-size: 2rem;
+                    background-color: gray;
+                    margin-bottom: 6rem;
+                    margin-left: 4rem;
+                    margin-top: 10px;
+                    }
+        }
+            
         .colum4{
         position: relative;
         display: inline-block;
@@ -295,22 +451,100 @@
             opacity: 0.1;
             } 
             #popup4{
-                max-width: 90ch;
+                max-width:75%;
+                max-height: 90%;
                 font-size: 2.5rem;
                 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(9, 30, 68) 36%);
                 color: aliceblue;
                 border-radius: 1%;
                 border-color: #10162c;
                 padding-top: 0rem;
+
+                .recuadrop4{
+                    border-left: groove;
+                    border-right: groove;
+                    height: 134rem;
+                    }
+
                 h2{
                 text-decoration: underline;
                 }
-                #listatexto4{
-                column-count: 2;
-                column-gap: 2rem;
-                column-rule: 4px gray;
+
+                .parrafop4{
+                    margin-left: 8rem;
+                    margin-right: 8rem;
+                    text-align: justify;
+                }
+
+                .cajalistap4{
+                    background-color: #4baad31a;
+                    margin: 5rem;
+                    padding: 3rem;
+                    border-radius: 3px;
                 }  
-              }}
+
+                #listatexto4{
+                    column-count: 3;
+                    column-rule: 4px gray;
+                    list-style: none;
+                    justify-content: center;
+                    vertical-align:text-top;
+                    padding-top: 1rem;
+                }  
+              }
+              .carrousel4{
+                width: 90%;
+                overflow: hidden;
+                position: relative;
+                margin-left: 6.5rem;
+                                    
+                .imagenespopup4{
+                display: flex;
+                transform: transform 0.5s ease;
+                /* object-fit: cover;
+                scroll-snap-align: center;
+    */
+                .img_carrousel{
+                    height: 34rem;
+                    width: 46rem;
+                    margin-top: 13rem;
+                    margin-right: 1rem;
+                    margin-bottom: 10rem;
+    
+                    &:hover{
+                        transform: scale(1.90);
+                        opacity: 1;
+                        }
+                    }
+                }
+            }
+                .buttonContainer4{
+                    display: flex;
+                    justify-content: center;
+                    #prevButton2,#nextButton2 {
+                        margin-top: 3px;
+                        margin-right: 20px;
+                        cursor: pointer;
+                        padding: 5px 10px;
+                        font-size: 14px;
+                    }
+                }
+                 
+    
+            #cierretexto4{
+                text-align: center;
+                color: white;
+                top: 168%;
+                left: 50%;
+                transform: translate(-54%, 7%);
+                font-size: 2rem;
+                background-color: gray;
+                margin-bottom: 6rem;
+                margin-left: 4rem;
+                margin-top: 10px;
+                }
+    
+            }
     
         @media(min-width: 768px){
             .servicios{

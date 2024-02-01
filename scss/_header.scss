@@ -7,7 +7,7 @@ body{
     font-family: 'Oswald', sans-serif;
     background-color: #10162c;
     background-repeat: no-repeat;
-    background-size:cover;
+    width: fit-content;
 }
 header{
     position: fixed;
@@ -81,6 +81,16 @@ header{
 }
    
 
+@media (max-width: 425px){
+    .contenedorheader{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        .icon_menu_container{
+        display:block ;
+        color: white;
+        }
+    }}
 
 // h2{ font-size: 3rem;}
 

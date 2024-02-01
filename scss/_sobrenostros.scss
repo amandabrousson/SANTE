@@ -3,7 +3,7 @@
     margin-left: 3rem;
     margin-right: 3rem;
     border-radius: 6px; 
-    height: 93rem; //214rem <-- valor con la section toda desplegada            
+    height: auto; //214rem <-- valor con la section toda desplegada            
 
     .sobre_nosotros-subtitulo{
     margin-top: 2rem;
@@ -135,28 +135,3 @@
     }}
 
 
-
-.escudos{
-    /* display: flex; */
-    position: relative;
-    margin-top: 89rem;
-    
-    .escudo1{
-    height: 12rem;
-    padding-right: 2rem;
-    padding-left: 9rem;
-    }
-
-    .escudo2{
-    height: 12rem;
-    padding-right: 2rem;
-    }
-
-    .escudo3{
-    height: 12rem;
-    padding-right: 2rem;
-    }
-
-    .escudo4{
-    height: 12rem;
-}}
