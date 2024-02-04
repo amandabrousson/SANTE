@@ -44,38 +44,66 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-    // Actualiza la clase activ
-
-
-
-/* FUNCIONES DE SERVICIOS */
+   /* FUNCIONES DE SERVICIOS */
 
 const texto1 = document.querySelector('#texto1');
 const cierretexto1 = document.querySelector('#cierretexto1');
 const popup1 = document.querySelector('#popup1');
 
-texto1.addEventListener("click", ()=>{popup1.showModal();})
+texto1.addEventListener("click", abrirpopup = () => {
+    popup1.showModal()
+    setTimeout(function (){
+        document.getElementById('tituloPopup').scrollIntoView({behavior: "smooth", block: "start"});
+    }, 100)
+})
+
 cierretexto1.addEventListener("click", ()=>{popup1.close();})
+
+// POPUP2
 
 const texto2 = document.querySelector('#texto2');
 const cierretexto2 = document.querySelector('#cierretexto2');
 const popup2 = document.querySelector('#popup2');
 
-texto2.addEventListener("click", ()=>{popup2.showModal();})
+texto2.addEventListener("click", abrirpopup = () => {
+    popup2.showModal()
+    setTimeout(function (){
+        document.getElementById('tituloPopup2').scrollIntoView({behavior: "smooth", block: "start"});
+    }, 100)
+})
+
 cierretexto2.addEventListener("click", ()=>{popup2.close();})
+
+// POPUP 3
 
 const texto3 = document.querySelector('#texto3');
 const cierretexto3 = document.querySelector('#cierretexto3');
 const popup3 = document.querySelector('#popup3');
 
-texto3.addEventListener("click", ()=>{popup3.showModal();})
+texto3.addEventListener("click", abrirpopup = () => {
+    popup3.showModal()
+    setTimeout(function (){
+        document.getElementById('tituloPopup3').scrollIntoView({behavior: "smooth", block: "start"});
+    }, 100)
+})
+
 cierretexto3.addEventListener("click", ()=>{popup3.close();})
+
+
+
+// POPUP 4 
 
 const texto4 = document.querySelector('#texto4');
 const cierretexto4 = document.querySelector('#cierretexto4');
 const popup4 = document.querySelector('#popup4');
 
-texto4.addEventListener("click", ()=>{popup4.showModal();})
+texto4.addEventListener("click", abrirpopup = () => {
+    popup4.showModal()
+    setTimeout(function (){
+        document.getElementById('tituloPopup4').scrollIntoView({behavior: "smooth", block: "start"});
+    }, 100)
+})
+
 cierretexto4.addEventListener("click", ()=>{popup4.close();})
 
 /* FUNCIONES DE STAFF */
@@ -115,42 +143,6 @@ function toggleTextstaff(){
     }
  };  
 
- // POPUP1
-const carruselContainer = document.querySelector('.carrousel');
-const imagenesPopup1 = document.querySelector('.imagenespopup1');
-const totalSlides = imagenesPopup1.children.length;
-let index = 0;
-
-function nextSlide() {
-    index++;
-    if (index >= totalSlides) {
-        index = 0; // Reiniciar al principio cuando llega al final
-    }
-    updateSlide();
-}
-
-function prevSlide() {
-    index--;
-    if (index < 0) {
-        index = totalSlides - 1; // Ir al final cuando retrocede desde el principio
-    }
-    updateSlide();
-}
-
-
-function updateSlide() {
-    const translationValue = -index * 100 + '%';
-    imagenesPopup1.style.transition = 'transform 0.5s ease-in-out';
-    imagenesPopup1.style.transform = 'translateX(' + translationValue + ')';
-}
-
-// Agregar un listener para el evento de transición
-imagenesPopup1.addEventListener('transitionend', () => {
-    if (index === 0 || index === totalSlides - 1) {
-        // Eliminar la transición al llegar al inicio o final del carrusel
-        imagenesPopup1.style.transition = 'none';
-    }
-});
 
 
 function expandir() {

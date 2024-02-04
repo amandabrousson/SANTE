@@ -49,11 +49,9 @@
             display: none;
         }
         .showsn{
-            display: block;
-            
-            
+            display: block;           
         }
-        .readmoresb{
+        .boton{
             background-color: transparent;
             color: aliceblue;
             border: none;
@@ -61,14 +59,8 @@
             text-decoration: underline;
             display: flex;
             margin-left: 7rem;
+            margin-right: 135rem;
         }
-
-        /* .imgsn{       HASTA QUE NO APLIQUE IMAGEN QUEDA COMENTADO
-            width: 55rem;
-            height: 60rem;
-            float: right;
-            margin-right: 8rem;  
-        } */
     }
 
 
@@ -123,7 +115,7 @@
                     display: block;
                 }
                 
-                .leermas{
+                .boton{
                     background-color: transparent;
                     color: aliceblue;
                     border: none;

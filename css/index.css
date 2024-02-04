@@ -268,7 +268,7 @@ header {
         margin-left: 6.5rem; }
         .fondoservicios .columnasserv .colum1 #popup1 .carrousel .imagenespopup1 {
           display: flex;
-          transform: transform 0.5s ease;
+          transform: translate(0.5s) ease;
           /* object-fit: cover;
                     scroll-snap-align: center;
  */ }
@@ -277,7 +277,8 @@ header {
             width: 46rem;
             margin-top: 13rem;
             margin-right: 1rem;
-            margin-bottom: 10rem; }
+            margin-bottom: 10rem;
+            object-fit: cover; }
             .fondoservicios .columnasserv .colum1 #popup1 .carrousel .imagenespopup1 .img_carrousel:hover {
               transform: scale(1.9);
               opacity: 1; }
@@ -290,17 +291,17 @@ header {
           cursor: pointer;
           padding: 5px 10px;
           font-size: 14px; }
-    .fondoservicios .columnasserv .colum1 #cierretexto1 {
-      text-align: center;
-      color: white;
-      top: 168%;
-      left: 50%;
-      transform: translate(-54%, 7%);
-      font-size: 2rem;
-      background-color: gray;
-      margin-bottom: 6rem;
-      margin-left: 4rem;
-      margin-top: 10px; }
+      .fondoservicios .columnasserv .colum1 #popup1 #cierretexto1 {
+        text-align: center;
+        color: white;
+        top: 168%;
+        left: 50%;
+        transform: translate(-54%, 7%);
+        font-size: 2rem;
+        background-color: gray;
+        margin-bottom: 6rem;
+        margin-left: 4rem;
+        margin-top: 10px; }
 
 /* COLUMNA 2  */
 .colum2 {
@@ -363,16 +364,14 @@ header {
     margin-left: 6.5rem; }
     .colum2 .carrousel2 .imagenespopup2 {
       display: flex;
-      transform: transform 0.5s ease;
-      /* object-fit: cover;
-            scroll-snap-align: center;
-*/ }
+      transform: transform 0.5s ease; }
       .colum2 .carrousel2 .imagenespopup2 .img_carrousel2 {
         height: 34rem;
         width: 46rem;
         margin-top: 13rem;
         margin-right: 1rem;
-        margin-bottom: 10rem; }
+        margin-bottom: 10rem;
+        object-fit: cover; }
         .colum2 .carrousel2 .imagenespopup2 .img_carrousel2:hover {
           transform: scale(1.9);
           opacity: 1; }
@@ -403,10 +402,10 @@ header {
   position: relative;
   display: inline-block;
   text-align: center; }
-  .colum3 img {
+  .colum3 .imgserv3 {
     height: 49rem;
     opacity: 0.3; }
-    .colum3 img:hover {
+    .colum3 .imgserv3:hover {
       transform: scale(1.15);
       opacity: 1; }
   .colum3 #texto3 {
@@ -454,30 +453,30 @@ header {
       justify-content: center;
       vertical-align: text-top;
       padding-top: 1rem; }
-  .colum3 .carrousel3 {
-    width: 90%;
-    overflow: hidden;
-    position: relative;
-    margin-left: 6.5rem; }
-    .colum3 .carrousel3 .imagenespopup3 {
+  .colum3 .imgpop3 {
+    display: flex;
+    transform: transform 0.5s ease; }
+    .colum3 .imgpop3 .carrousel3 {
+      width: 90%;
+      overflow: hidden;
+      position: relative;
+      margin-left: 6.5rem;
       display: flex;
-      transform: transform 0.5s ease;
-      /* object-fit: cover;
-                    scroll-snap-align: center;
-        */ }
-      .colum3 .carrousel3 .imagenespopup3 .img_carrousel {
+      flex-direction: row; }
+      .colum3 .imgpop3 .carrousel3 .img_carrousel3 {
         height: 34rem;
         width: 46rem;
         margin-top: 13rem;
         margin-right: 1rem;
-        margin-bottom: 10rem; }
-        .colum3 .carrousel3 .imagenespopup3 .img_carrousel:hover {
+        margin-bottom: 10rem;
+        object-fit: cover; }
+        .colum3 .imgpop3 .carrousel3 .img_carrousel3:hover {
           transform: scale(1.9);
           opacity: 1; }
   .colum3 .buttonContainer3 {
     display: flex;
     justify-content: center; }
-    .colum3 .buttonContainer3 #prevButton2, .colum3 .buttonContainer3 #nextButton2 {
+    .colum3 .buttonContainer3 #prevButton3, .colum3 .buttonContainer3 #nextButton3 {
       margin-top: 3px;
       margin-right: 20px;
       cursor: pointer;
@@ -498,11 +497,22 @@ header {
 .colum4 {
   position: relative;
   display: inline-block;
-  text-align: center; }
-  .colum4 img {
+  text-align: center;
+  /* .buttonContainer4{
+                    display: flex;
+                    justify-content: center;
+                    #prevButton2,#nextButton2 {
+                        margin-top: 3px;
+                        margin-right: 20px;
+                        cursor: pointer;
+                        padding: 5px 10px;
+                        font-size: 14px;
+                    }
+                } */ }
+  .colum4 .imgserv4 {
     height: 49rem;
     opacity: 0.3; }
-    .colum4 img:hover {
+    .colum4 .imgserv4:hover {
       transform: scale(1.15);
       opacity: 1; }
   .colum4 #texto4 {
@@ -550,46 +560,36 @@ header {
       justify-content: center;
       vertical-align: text-top;
       padding-top: 1rem; }
-  .colum4 .carrousel4 {
-    width: 90%;
-    overflow: hidden;
-    position: relative;
-    margin-left: 6.5rem; }
-    .colum4 .carrousel4 .imagenespopup4 {
+  .colum4 .imgpop4 {
+    display: flex;
+    transform: transform 0.5s ease; }
+    .colum4 .imgpop4 .carrousel4 {
+      width: 90%;
+      overflow: hidden;
+      position: relative;
+      margin-left: 17.5rem;
       display: flex;
-      transform: transform 0.5s ease;
-      /* object-fit: cover;
-                scroll-snap-align: center;
-    */ }
-      .colum4 .carrousel4 .imagenespopup4 .img_carrousel {
-        height: 34rem;
+      flex-direction: row; }
+      .colum4 .imgpop4 .carrousel4 .img_carrousel4 {
+        height: 51rem;
         width: 46rem;
-        margin-top: 13rem;
         margin-right: 1rem;
-        margin-bottom: 10rem; }
-        .colum4 .carrousel4 .imagenespopup4 .img_carrousel:hover {
+        margin-bottom: 10rem;
+        object-fit: cover; }
+        .colum4 .imgpop4 .carrousel4 .img_carrousel4:hover {
           transform: scale(1.9);
           opacity: 1; }
-  .colum4 .buttonContainer4 {
-    display: flex;
-    justify-content: center; }
-    .colum4 .buttonContainer4 #prevButton2, .colum4 .buttonContainer4 #nextButton2 {
-      margin-top: 3px;
-      margin-right: 20px;
-      cursor: pointer;
-      padding: 5px 10px;
-      font-size: 14px; }
   .colum4 #cierretexto4 {
+    position: absolute;
     text-align: center;
     color: white;
-    top: 168%;
-    left: 50%;
+    left: 46%;
     transform: translate(-54%, 7%);
     font-size: 2rem;
     background-color: gray;
     margin-bottom: 6rem;
     margin-left: 4rem;
-    margin-top: 10px; }
+    margin-top: 54rem; }
 
 @media (min-width: 768px) {
   .servicios {
@@ -641,12 +641,6 @@ header {
         height: 60rem;
         float: right;
         margin-right: 8rem;    
-        } */
-    /* .imgsn{       HASTA QUE NO APLIQUE IMAGEN QUEDA COMENTADO
-            width: 55rem;
-            height: 60rem;
-            float: right;
-            margin-right: 8rem;  
         } */ }
     .sobre_nosotros .sobre_nosotros-subtitulo .sobre_nosotros h2 {
       margin-bottom: 4rem;
@@ -670,14 +664,15 @@ header {
       display: none; }
     .sobre_nosotros .sobre_nosotros-subtitulo .showsn {
       display: block; }
-    .sobre_nosotros .sobre_nosotros-subtitulo .readmoresb {
+    .sobre_nosotros .sobre_nosotros-subtitulo .boton {
       background-color: transparent;
       color: aliceblue;
       border: none;
       font-size: 2.5rem;
       text-decoration: underline;
       display: flex;
-      margin-left: 7rem; }
+      margin-left: 7rem;
+      margin-right: 135rem; }
   .sobre_nosotros .sobre_nosotros-staff {
     display: flex;
     flex-direction: column; }
@@ -708,7 +703,7 @@ header {
       display: none; }
     .sobre_nosotros .parrafostaff .mostrarstaff {
       display: block; }
-    .sobre_nosotros .parrafostaff .leermas {
+    .sobre_nosotros .parrafostaff .boton {
       background-color: transparent;
       color: aliceblue;
       border: none;
@@ -900,4 +895,5 @@ header {
   margin-top: 1.7rem; }
   .footer .footer__texto {
     text-align: center;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    color: #4d4a4a; }
