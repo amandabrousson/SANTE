@@ -207,7 +207,7 @@
                 <button id="texto3">Mep Sports Concept</button>
                 <dialog id="popup3">
                   <div class="recuadrop3">
-                    <h2 class="tituloPopup3">Mep Sports Concept</h2>
+                    <h2 id="tituloPopup3">Mep Sports Concept</h2>
                     <div class="parrafop3">
                     <p>Consiste en la aplicación de una corriente galvánica en el orden de microamperios, en forma percutánea (con una aguja de acupuntura) con el fin de generar, entre otros efectos: Analgesia / Regeneración del tejido / Normalización del pH local.</p>
                     <p>MEP Sport Concept revolucionó la fisioterapia deportiva y ya es usada por la mayoría de los equipos de fútbol en Argentina y varias selecciones de múltiples disciplinas en América Latina. Consigue resultados en una sola aplicación en patologías que otros agentes no consiguen resolver. Ideal en patologías agudas, subagudas y crónicas donde otros recursos fallan:</p>
@@ -251,7 +251,7 @@
                 <button id="texto4">SNA integrativo</button>
                 <dialog id="popup4">
                    <div class="recuadrop4">
-                    <h2 class="tituloPopup4">SNA Integrativo</h2>
+                    <h2 id="tituloPopup4">SNA Integrativo</h2>
                     <h3>LLEVAMOS EL DIAGNÓSTICO Y EL TRATAMIENTO MÁS ALLÁ</h3>
                     <div class="parrafop4">
                         <p>Evaluacion del sistema nervioso autonomo (SNA) y la función Vagal (Nervio Vago).</p>
@@ -383,18 +383,18 @@
                 <p>Teléfono - 1166772813</p>  
             </span>
 
-            <form id= "formulario" action=mailto:amanda.brousson@gmail.com>
+            <form id= "formulario" action=mailto:amanda.brousson@gmail.com method="post" enctype="text/plain">
                 <div class="itemsformulario">
                     <p>Nombre:</p>
-                    <input type="text" id="name" name="user_name" />
+                    <input type="text" id="name" name="user_name" required/>
                 
                     <p>Mail:</p>
-                    <input type="email" id="mail" name="user_mail" />
+                    <input type="email" id="mail" name="user_mail" required/>
                 </div>
 
                 <div class="formularioconsulta">
                     <p>Consulta:</p>
-                    <textarea id="msg" name="user_message"></textarea>
+                    <textarea id="msg" name="user_message" required></textarea>
                 </div>
                 
               <div class="botonenviar">
