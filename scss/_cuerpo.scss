@@ -1,23 +1,22 @@
 
-.hero{
-   background-image: url('../img/indice.jpg');
-    margin-top: 18rem;
+#inicio{
+.hero img{
+    margin-top: 13rem;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 330px;
+    height: 47rem;
     position: relative;
-
-    .contenido-hero{
-    position: absolute;
+}
+    
+    .contenido-hero{   
     height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 100%;     
     align-items: center;
-    justify-content: center;
-    }
-
+    justify-content: center; 
+    display: flex;
+    
     .boton{
+    position: absolute;
     background-color: #15cdca7b;
     text-decoration: none;
     color: aliceblue;
@@ -25,10 +24,13 @@
     font-weight: 700;
     border-radius: .5rem;
     padding: 2rem 2rem;
-    margin-top: 3rem;
     width: 11rem;
     text-align: center;
+    top: 40rem;
     }
+}
+
+
     @media (max-width: 480px) {
         .boton{
             width: auto;
@@ -41,8 +43,8 @@
             height: 200px;
             position: relative;
          }
-         }
 }
+
 
 .frase1 {
     -webkit-box-shadow: 1px 0px 6px 2px rgba(0,0,0,0);
@@ -119,3 +121,4 @@
         padding: 15px;
     }
     }
+}

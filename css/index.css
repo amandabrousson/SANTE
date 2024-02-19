@@ -77,22 +77,21 @@ header {
       display: block;
       color: white; } }
 
-.hero {
-  background-image: url("/img/indice.jpg");
-  margin-top: 18rem;
+#inicio .hero img {
+  margin-top: 13rem;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 330px;
+  height: 47rem;
   position: relative; }
-  .hero .contenido-hero {
+
+#inicio .contenido-hero {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex; }
+  #inicio .contenido-hero .boton {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .hero .boton {
     background-color: #15cdca7b;
     text-decoration: none;
     color: aliceblue;
@@ -100,69 +99,70 @@ header {
     font-weight: 700;
     border-radius: .5rem;
     padding: 2rem 2rem;
-    margin-top: 3rem;
     width: 11rem;
-    text-align: center; }
-  @media (max-width: 480px) {
-    .hero .boton {
-      width: auto; }
-    .hero .hero {
-      background-image: url("/img/indice.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 200px;
-      position: relative; } }
+    text-align: center;
+    top: 40rem; }
 
-.frase1 {
+@media (max-width: 480px) {
+  #inicio .boton {
+    width: auto; }
+  #inicio .hero {
+    background-image: url("/img/indice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    position: relative; } }
+
+#inicio .frase1 {
   -webkit-box-shadow: 1px 0px 6px 2px rgba(0, 0, 0, 0);
   box-shadow: 1px 0px 6px 2px rgba(0, 0, 0, 0.27);
   background: linear-gradient(90deg, #020024 0%, #093179 36%, #00d4ff 100%);
   padding: 4rem; }
-  .frase1 p {
+  #inicio .frase1 p {
     text-align: center;
     color: aliceblue;
     align-items: center;
     font-size: 4rem; }
 
-.main {
+#inicio .main {
   display: flex;
   color: aliceblue;
   margin: 15rem 15rem 12rem 23rem; }
-  .main h3 {
+  #inicio .main h3 {
     text-align: center;
     align-items: center;
     font-size: 2rem; }
 
-.col0 {
+#inicio .col0 {
   margin-right: 4rem; }
 
-.col {
+#inicio .col {
   border-left: groove;
   width: 35rem;
   height: 25rem; }
 
 @media (max-width: 480px) {
-  .frase1 {
+  #inicio .frase1 {
     padding: 2rem; }
-  .frase1 p {
+  #inicio .frase1 p {
     font-size: 3rem; }
-  .main {
+  #inicio .main {
     margin: 0px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 6rem; }
-  .main h3 {
+  #inicio .main h3 {
     font-size: 1.7rem; }
-  .col0 {
+  #inicio .col0 {
     margin-right: 0px; }
-  .col0 h3 {
+  #inicio .col0 h3 {
     margin: 0px;
     margin-top: 40px;
     padding: 10px; }
-  .col {
+  #inicio .col {
     width: auto;
     height: auto; }
-  .col h3 {
+  #inicio .col h3 {
     margin: 0px;
     padding: 15px; } }
 
@@ -293,12 +293,13 @@ header {
           font-size: 14px; }
       .fondoservicios .columnasserv .colum1 #popup1 #cierretexto1 {
         text-align: center;
+        border-radius: 5px;
+        background-color: #2b2323;
         color: white;
         top: 168%;
         left: 50%;
         transform: translate(-54%, 7%);
         font-size: 2rem;
-        background-color: gray;
         margin-bottom: 6rem;
         margin-left: 4rem;
         margin-top: 10px; }
@@ -387,12 +388,13 @@ header {
 
 #cierretexto {
   text-align: center;
+  border-radius: 5px;
+  background-color: #2b2323;
   color: white;
   top: 168%;
   left: 50%;
   transform: translate(-54%, 7%);
   font-size: 2rem;
-  background-color: gray;
   margin-bottom: 6rem;
   margin-left: 4rem;
   margin-top: 10px; }
@@ -484,12 +486,13 @@ header {
       font-size: 14px; }
   .colum3 #cierretexto3 {
     text-align: center;
+    border-radius: 5px;
+    background-color: #2b2323;
     color: white;
     top: 168%;
     left: 50%;
     transform: translate(-54%, 7%);
     font-size: 2rem;
-    background-color: gray;
     margin-bottom: 6rem;
     margin-left: 4rem;
     margin-top: 10px; }
@@ -582,11 +585,12 @@ header {
   .colum4 #cierretexto4 {
     position: absolute;
     text-align: center;
+    border-radius: 5px;
+    background-color: #2b2323;
     color: white;
     left: 46%;
     transform: translate(-54%, 7%);
     font-size: 2rem;
-    background-color: gray;
     margin-bottom: 6rem;
     margin-left: 4rem;
     margin-top: 54rem; }
@@ -891,9 +895,8 @@ header {
           margin-top: 2rem; }
 
 .footer {
-  padding: 0.5rem 0;
-  margin-top: 1.7rem; }
+  margin-top: 1rem; }
   .footer .footer__texto {
     text-align: center;
     font-size: 1.5rem;
-    color: #4d4a4a; }
+    color: #2a2929; }
