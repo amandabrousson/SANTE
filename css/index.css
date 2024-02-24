@@ -6,7 +6,7 @@ body {
   font-family: 'Oswald', sans-serif;
   background-color: #10162c;
   background-repeat: no-repeat;
-  max-width: 100%; }
+  width: fit-content; }
 
 header {
   position: fixed;
@@ -14,7 +14,7 @@ header {
   width: 100%;
   height: fit-content;
   background: #10162c;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   z-index: 100; }
   header h1 {
@@ -46,7 +46,7 @@ header {
     background: linear-gradient(90deg, #020024 0%, #093179 36%, #00d4ff 100%);
     border-bottom: 2px solid black; }
     header .navegador .navegador__contenedor {
-      max-width: 100%;
+      max-width: 150rem;
       font-family: 'Oswald', sans-serif; }
     header .navegador .navegador__indice {
       display: flex;
@@ -233,7 +233,7 @@ header {
       .fondoservicios .columnasserv .colum1 #popup1 .recuadrop1 {
         border-left: groove;
         border-right: groove;
-        height: 134rem; }
+        height: 74rem; }
         .fondoservicios .columnasserv .colum1 #popup1 .recuadrop1 h2 {
           text-decoration: underline; }
         .fondoservicios .columnasserv .colum1 #popup1 .recuadrop1 .parrafop1 {
@@ -288,7 +288,8 @@ header {
       .fondoservicios .columnasserv .colum1 #popup1 .buttonContainer {
         display: flex;
         justify-content: center; }
-        .fondoservicios .columnasserv .colum1 #popup1 .buttonContainer #prevButton, .fondoservicios .columnasserv .colum1 #popup1 .buttonContainer #nextButton {
+        .fondoservicios .columnasserv .colum1 #popup1 .buttonContainer #prevButton,
+        .fondoservicios .columnasserv .colum1 #popup1 .buttonContainer #nextButton {
           margin-right: 18px;
           margin-left: -1rem;
           margin-bottom: 1rem;
@@ -383,7 +384,8 @@ header {
   .colum2 .buttonContainer2 {
     display: flex;
     justify-content: center; }
-    .colum2 .buttonContainer2 #prevButton2, .colum2 .buttonContainer2 #nextButton2 {
+    .colum2 .buttonContainer2 #prevButton2,
+    .colum2 .buttonContainer2 #nextButton2 {
       margin-top: 3px;
       margin-right: -24px;
       margin-left: 5rem;
@@ -484,7 +486,8 @@ header {
   .colum3 .buttonContainer3 {
     display: flex;
     justify-content: center; }
-    .colum3 .buttonContainer3 #prevButton3, .colum3 .buttonContainer3 #nextButton3 {
+    .colum3 .buttonContainer3 #prevButton3,
+    .colum3 .buttonContainer3 #nextButton3 {
       margin-top: 3px;
       margin-right: 18px;
       margin-left: -1rem;

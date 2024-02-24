@@ -7,7 +7,7 @@ body{
     font-family: 'Oswald', sans-serif;
     background-color: #10162c;
     background-repeat: no-repeat;
-    max-width: 100%;
+    width: fit-content;
 }
 header{
     position: fixed;
@@ -15,7 +15,7 @@ header{
     width: 100%;
     height:fit-content;
     background: #10162c;
-    justify-content: space-around;
+    justify-content: /* space-around */ space-between;
     align-items: center;
     z-index: 100;
     h1 {
@@ -51,7 +51,7 @@ header{
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,49,121,1) 36%, rgba(0,212,255,1) 100%);
         border-bottom: 2px solid black;
         .navegador__contenedor{
-            max-width: 100%;
+            max-width: 150rem;
             font-family: 'Oswald', sans-serif;
             }
         .navegador__indice{

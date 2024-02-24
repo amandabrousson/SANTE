@@ -53,7 +53,7 @@ const popup1 = document.querySelector('#popup1');
 texto1.addEventListener("click", abrirpopup = () => {
     popup1.showModal()
     setTimeout(function (){
-        document.getElementById('tituloPopup').scrollIntoView({behavior: "smooth", block: "start"});
+        document.getElementById('tituloPopup1').scrollIntoView({behavior: "smooth", block: "start"});
     }, 100)
 })
 
