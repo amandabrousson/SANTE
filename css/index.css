@@ -78,97 +78,111 @@ header {
       display: block;
       color: white; } }
 
-#inicio .hero {
-  position: relative; }
+#inicio {
+  /*     @media (max-width: 480px) {
+        .boton{
+            width: auto;
+            }
+    
+         .hero{
+            background-image: url('/img/indice.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            position: relative;
+         }
+} */
+  /* @media (max-width: 480px){
+    .frase1{
+        padding: 2rem;
+    }
 
-#inicio .hero img {
-  margin-top: 13rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 47rem;
-  position: relative; }
+    .frase1 p {
+        font-size: 3rem;
+        }
 
-#inicio .contenido-hero {
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex; }
-  #inicio .contenido-hero .boton {
-    position: absolute;
-    background-color: #15cdca7b;
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 2.5rem;
-    font-weight: 700;
-    border-radius: .5rem;
-    padding: 2rem 2rem;
-    width: 11rem;
-    text-align: center;
-    top: 40rem; }
+    .main{
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+        
+    }
 
-@media (max-width: 480px) {
-  #inicio .boton {
-    width: auto; }
+    .main h3 {
+        font-size: 1.7rem;
+    }
+    
+    .col0 {
+        margin-right: 0px;
+    }
+
+    .col0 h3{
+        margin: 0px;
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    .col{
+        width: auto;
+        height: auto;
+    }
+
+    .col h3{
+        margin: 0px;
+        padding: 15px;
+    }
+    } */ }
   #inicio .hero {
-    background-image: url("/img/indice.jpg");
+    position: relative; }
+  #inicio .hero img {
+    margin-top: 13rem;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
-    position: relative; } }
-
-#inicio .frase1 {
-  -webkit-box-shadow: 1px 0px 6px 2px rgba(0, 0, 0, 0);
-  box-shadow: 1px 0px 6px 2px rgba(0, 0, 0, 0.27);
-  background: linear-gradient(90deg, #020024 0%, #093179 36%, #00d4ff 100%);
-  padding: 4rem; }
-  #inicio .frase1 p {
-    text-align: center;
-    color: aliceblue;
+    height: 47rem;
+    position: relative; }
+  #inicio .contenido-hero {
+    height: 100%;
+    width: 100%;
     align-items: center;
-    font-size: 4rem; }
-
-#inicio .main {
-  display: flex;
-  color: aliceblue;
-  margin: 15rem 15rem 12rem 23rem; }
-  #inicio .main h3 {
-    text-align: center;
-    align-items: center;
-    font-size: 2rem; }
-
-#inicio .col0 {
-  margin-right: 4rem; }
-
-#inicio .col {
-  border-left: groove;
-  width: 35rem;
-  height: 25rem; }
-
-@media (max-width: 480px) {
+    justify-content: center;
+    display: flex; }
+    #inicio .contenido-hero .boton {
+      position: absolute;
+      background-color: #15cdca7b;
+      text-decoration: none;
+      color: aliceblue;
+      font-size: 2.5rem;
+      font-weight: 700;
+      border-radius: .5rem;
+      padding: 2rem 2rem;
+      width: 11rem;
+      text-align: center;
+      top: 40rem; }
   #inicio .frase1 {
-    padding: 2rem; }
-  #inicio .frase1 p {
-    font-size: 3rem; }
+    -webkit-box-shadow: 1px 0px 6px 2px rgba(0, 0, 0, 0);
+    box-shadow: 1px 0px 6px 2px rgba(0, 0, 0, 0.27);
+    background: linear-gradient(90deg, #020024 0%, #093179 36%, #00d4ff 100%);
+    padding: 4rem; }
+    #inicio .frase1 p {
+      text-align: center;
+      color: aliceblue;
+      align-items: center;
+      font-size: 4rem; }
   #inicio .main {
-    margin: 0px;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 6rem; }
-  #inicio .main h3 {
-    font-size: 1.7rem; }
+    color: aliceblue;
+    margin: 15rem 15rem 12rem 23rem; }
+    #inicio .main h3 {
+      text-align: center;
+      align-items: center;
+      font-size: 2rem; }
   #inicio .col0 {
-    margin-right: 0px; }
-  #inicio .col0 h3 {
-    margin: 0px;
-    margin-top: 40px;
-    padding: 10px; }
+    margin-right: 4rem; }
   #inicio .col {
-    width: auto;
-    height: auto; }
-  #inicio .col h3 {
-    margin: 0px;
-    padding: 15px; } }
+    border-left: groove;
+    width: 35rem;
+    height: 25rem; }
 
 .servicios {
   margin-top: 1rem;
@@ -264,6 +278,9 @@ header {
         .fondoservicios .columnasserv .colum1 #popup1 .recuadrop1 #planifp {
           margin-top: 6rem;
           margin-right: 29rem; }
+      @media (max-width: 350px) {
+        .fondoservicios .columnasserv .colum1 #popup1 #planificacion {
+          margin-left: 8rem; } }
       .fondoservicios .columnasserv .colum1 #popup1 .carrousel {
         width: 90%;
         overflow: hidden;
@@ -726,6 +743,10 @@ header {
       text-decoration: underline;
       display: flex;
       margin-right: 82rem; }
+
+@media (max-width: 480px) {
+  .sobre_nosotros {
+    margin-top: 55rem; } }
 
 #coberturas {
   position: relative; }
