@@ -178,8 +178,7 @@
                         padding: 5px 10px;
                         font-size: 14px;
                     }
-                }
-                
+                }              
 
                 #cierretexto1 {
                     text-align: center;
@@ -403,19 +402,22 @@
 
         .cajalistap3 {
             background-color: #4baad31a;
+            border: solid 2px white;
             margin: 5rem;
             padding: 3rem;
             border-radius: 3px;
-        }
-
+               
         #listapop3 {
             column-count: 3;
             column-rule: 4px gray;
+            justify-content: center ;
             list-style: none;
-            justify-content: center;
             vertical-align: text-top;
             padding-top: 1rem;
-        }
+            #tendinitis{
+                margin-top: 0px;
+            }
+        }}
 
     }
 
@@ -545,16 +547,21 @@
             margin: 5rem;
             padding: 3rem;
             border-radius: 3px;
+            #listatexto4 {
+                column-count: 3;
+                column-rule: 4px gray;
+                list-style: none;
+                justify-content: center;
+                vertical-align: text-top;
+                padding-top: 1rem;
+                #lumbalgia{
+                    margin-top: 0px;
+                    }
+                }
+            }
+
         }
 
-        #listatexto4 {
-            column-count: 3;
-            column-rule: 4px gray;
-            list-style: none;
-            justify-content: center;
-            vertical-align: text-top;
-            padding-top: 1rem;
-        }
     }
 
     .imgpop4 {
@@ -611,8 +618,6 @@
         margin-left: 4rem;
         margin-top: 54rem;
     }
-
-}
 
 @media(min-width: 768px) {
     .servicios {

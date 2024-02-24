@@ -32,7 +32,6 @@ header {
       height: 15rem;
       float: left;
       margin-top: -95px;
-      position: absolute;
       right: 98rem; }
     header .contenedorheader h2 {
       text-align: center;
@@ -41,7 +40,8 @@ header {
       font-size: 3rem;
       color: #4f80e2;
       margin-left: 2rem;
-      margin-top: 2px; }
+      margin-top: 2px;
+      margin-right: 15rem; }
   header .navegador {
     background: linear-gradient(90deg, #020024 0%, #093179 36%, #00d4ff 100%);
     border-bottom: 2px solid black; }
@@ -470,16 +470,19 @@ header {
       text-align: justify; }
     .colum3 #popup3 .cajalistap3 {
       background-color: #4baad31a;
+      border: solid 2px white;
       margin: 5rem;
       padding: 3rem;
       border-radius: 3px; }
-    .colum3 #popup3 #listapop3 {
-      column-count: 3;
-      column-rule: 4px gray;
-      list-style: none;
-      justify-content: center;
-      vertical-align: text-top;
-      padding-top: 1rem; }
+      .colum3 #popup3 .cajalistap3 #listapop3 {
+        column-count: 3;
+        column-rule: 4px gray;
+        justify-content: center;
+        list-style: none;
+        vertical-align: text-top;
+        padding-top: 1rem; }
+        .colum3 #popup3 .cajalistap3 #listapop3 #tendinitis {
+          margin-top: 0px; }
   .colum3 .imgpop3 {
     display: flex;
     transform: transform 0.5s ease; }
@@ -528,18 +531,7 @@ header {
 .colum4 {
   position: relative;
   display: inline-block;
-  text-align: center;
-  /* .buttonContainer4{
-                    display: flex;
-                    justify-content: center;
-                    #prevButton2,#nextButton2 {
-                        margin-top: 3px;
-                        margin-right: 20px;
-                        cursor: pointer;
-                        padding: 5px 10px;
-                        font-size: 14px;
-                    }
-                } */ }
+  text-align: center; }
   .colum4 .imgserv4 {
     height: 49rem;
     opacity: 0.3; }
@@ -584,44 +576,59 @@ header {
       margin: 5rem;
       padding: 3rem;
       border-radius: 3px; }
-    .colum4 #popup4 #listatexto4 {
-      column-count: 3;
-      column-rule: 4px gray;
-      list-style: none;
-      justify-content: center;
-      vertical-align: text-top;
-      padding-top: 1rem; }
-  .colum4 .imgpop4 {
+      .colum4 #popup4 .cajalistap4 #listatexto4 {
+        column-count: 3;
+        column-rule: 4px gray;
+        list-style: none;
+        justify-content: center;
+        vertical-align: text-top;
+        padding-top: 1rem; }
+        .colum4 #popup4 .cajalistap4 #listatexto4 #lumbalgia {
+          margin-top: 0px; }
+
+.imgpop4 {
+  display: flex;
+  transform: transform 0.5s ease; }
+  .imgpop4 .carrousel4 {
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    margin-left: 17.5rem;
     display: flex;
-    transform: transform 0.5s ease; }
-    .colum4 .imgpop4 .carrousel4 {
-      width: 90%;
-      overflow: hidden;
-      position: relative;
-      margin-left: 17.5rem;
-      display: flex;
-      flex-direction: row; }
-      .colum4 .imgpop4 .carrousel4 .img_carrousel4 {
-        height: 51rem;
-        width: 46rem;
-        margin-right: 1rem;
-        margin-bottom: 10rem;
-        object-fit: cover; }
-        .colum4 .imgpop4 .carrousel4 .img_carrousel4:hover {
-          transform: scale(1.9);
-          opacity: 1; }
-  .colum4 #cierretexto4 {
-    position: absolute;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #2b2323;
-    color: white;
-    left: 46%;
-    transform: translate(-54%, 7%);
-    font-size: 2rem;
-    margin-bottom: 6rem;
-    margin-left: 4rem;
-    margin-top: 54rem; }
+    flex-direction: row; }
+    .imgpop4 .carrousel4 .img_carrousel4 {
+      height: 51rem;
+      width: 46rem;
+      margin-right: 1rem;
+      margin-bottom: 10rem;
+      object-fit: cover; }
+      .imgpop4 .carrousel4 .img_carrousel4:hover {
+        transform: scale(1.9);
+        opacity: 1; }
+
+/* .buttonContainer4{
+                    display: flex;
+                    justify-content: center;
+                    #prevButton2,#nextButton2 {
+                        margin-top: 3px;
+                        margin-right: 20px;
+                        cursor: pointer;
+                        padding: 5px 10px;
+                        font-size: 14px;
+                    }
+                } */
+#cierretexto4 {
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #2b2323;
+  color: white;
+  left: 46%;
+  transform: translate(-54%, 7%);
+  font-size: 2rem;
+  margin-bottom: 6rem;
+  margin-left: 4rem;
+  margin-top: 54rem; }
 
 @media (min-width: 768px) {
   .servicios {
@@ -730,7 +737,9 @@ header {
   .sobre_nosotros .parrafostaff {
     color: aliceblue;
     font-size: 22px;
-    margin-left: 7rem; }
+    margin-left: 7rem;
+    margin-right: 7rem;
+    text-align: justify; }
     .sobre_nosotros .parrafostaff .esconderstaff {
       display: none; }
     .sobre_nosotros .parrafostaff .mostrarstaff {
