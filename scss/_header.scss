@@ -8,10 +8,13 @@ body{
     background-color: #10162c;
     background-repeat: no-repeat;
     width: fit-content;
+    width:100%;
+    margin: 0;
+    padding: 0;
 }
+
 header{
     position: fixed;
-    top: 0;
     width: 100%;
     height:fit-content;
     background: #10162c;
@@ -35,6 +38,7 @@ header{
             float: left;
             margin-top: -95px;
             right: 98rem;
+            
         }
         h2 {
             text-align: center;
